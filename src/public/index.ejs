@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico" crossorigin="use-credentials">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+	<% for (const key in htmlWebpackPlugin.files.css) { %>
+		<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[key] %>">
+	<% } %>
+
+</head>
+<body>
+   <main id="root"></main>
+
+  <% for (const key in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
+  <% } %>
+</body>
+</html>

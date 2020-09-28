@@ -1,0 +1,31 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "downlevelIteration": true,
+      "importHelpers": true,
+      "outDir": "./dist",
+      "baseUrl": "./",
+      "sourceMap": true,
+      "declaration": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "strictFunctionTypes": false,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitAny": false,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "skipLibCheck": true,
+      "lib": ["es2017", "esnext.array", "dom"],
+      "paths": { "*": ["src/*", "*"] }
+    },
+    "exclude": ["node_modules"]
+  }
